@@ -1,6 +1,6 @@
 # capacitor-plugin-phone-call
 
-a phone call plugin for Capacitor
+a phone call plugin for Capacitor3, apply for IOS/Android
 
 ## Install
 
