@@ -1,8 +1,20 @@
 package com.phonecall.zhuxian;
 
-public class PhoneCall {
+import android.content.Context;
 
-    public String echo(String value) {
-        return value;
+public class PhoneCall {
+    private Context context;
+
+    public PhoneCall(Context context) {
+        this.context = context;
     }
+
+    public Context getContext() {
+        return this.context;
+    }
+
+    public String start(String phone) {
+        return phone;
+    }
+
 }

@@ -1,3 +1,10 @@
 export interface PhoneCallPlugin {
-  echo(options: { value: string }): Promise<{ value: string }>;
+  start(options: PhoneCallOptions): Promise<SucessCallBack>;
+}
+
+export interface PhoneCallOptions {
+  phone: string;
+}
+export interface SucessCallBack {
+  msg: string;
 }

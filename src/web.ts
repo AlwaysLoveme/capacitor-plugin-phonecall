@@ -1,10 +1,10 @@
 import { WebPlugin } from '@capacitor/core';
 
-import type { PhoneCallPlugin } from './definitions';
+import type { PhoneCallPlugin, PhoneCallOptions, SucessCallBack} from './definitions';
 
 export class PhoneCallWeb extends WebPlugin implements PhoneCallPlugin {
-  async echo(options: { value: string }): Promise<{ value: string }> {
-    console.log('ECHO', options);
-    return options;
+  async start(options: PhoneCallOptions): Promise<SucessCallBack> {
+    console.log(options);
+    return {msg: "成功"}
   }
 }

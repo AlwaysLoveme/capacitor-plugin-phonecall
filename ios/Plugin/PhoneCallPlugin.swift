@@ -9,10 +9,16 @@ import Capacitor
 public class PhoneCallPlugin: CAPPlugin {
     private let implementation = PhoneCall()
 
-    @objc func echo(_ call: CAPPluginCall) {
-        let value = call.getString("value") ?? ""
+    @objc func start(_ call: CAPPluginCall) {
+        let phoneNumber = call.getString("phone") ?? "";
+        let  phoneUrlStr = "tel://"+phoneNumber;
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(URL(string: phoneUrlStr)!, options: [:], completionHandler: nil)
+        } else {
+            UIApplication.shared.openURL(URL(string: phoneUrlStr)!)
+        }
         call.resolve([
-            "value": implementation.echo(value)
+            "msg": "成功"
         ])
     }
 }
