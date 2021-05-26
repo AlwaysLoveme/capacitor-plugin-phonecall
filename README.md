@@ -8,7 +8,14 @@ a phone call plugin for Capacitor
 npm install capacitor-plugin-phone-call
 npx cap sync
 ```
+eg:
+```typescript
+import { PhoneCall } from "capacitor-plugin-phone-call";
 
+PhoneCall.start({ phone: "10086" });
+
+···
+```
 ## API
 
 <docgen-index>
