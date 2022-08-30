@@ -1,4 +1,18 @@
 # capacitor-plugin-phone-call
+<p align="left">
+<a href="https://img.shields.io/badge/support-Android-516BEB?logo=android&logoColor=white&style=plastic">
+<img src="https://img.shields.io/badge/support-Android-516BEB?style=plastic"/>
+</a>
+<a href="https://img.shields.io/badge/support-Android-516BEB?logo=android&logoColor=white&style=plastic">
+<img src="https://img.shields.io/badge/support-IOS-516BEB?style=plastic"/>
+</a>
+<a href="https://www.npmjs.com/package/capacitor-plugin-phone-call">
+<img src="https://img.shields.io/npm/v/capacitor-plugin-phone-call/latest.svg"/>
+</a>
+<a href="https://www.npmjs.com/package/capacitor-plugin-phone-call">
+<img src="https://img.shields.io/npm/dm/capacitor-plugin-phone-call.svg"/>
+</a>
+</p>
 
 a phone call plugin for Capacitor3, apply for IOS/Android
 
