@@ -1,11 +1,11 @@
-# capacitor-plugin-phonecall
+# capacitor-plugin-phone-call
 
 a native phone call plugin for Capacitor
 
 ## Install
 
 ```bash
-npm install capacitor-plugin-phonecall
+npm install capacitor-plugin-phone-call
 npx cap sync
 ```
 eg:
