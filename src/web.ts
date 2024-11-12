@@ -1,10 +1,10 @@
 import { WebPlugin } from '@capacitor/core';
 
-import type { PhoneCallPlugin, PhoneCallOptions, SucessCallBack} from './definitions';
+import type { PhoneCallPlugin, CallOptions } from './definitions';
 
 export class PhoneCallWeb extends WebPlugin implements PhoneCallPlugin {
-  async start(options: PhoneCallOptions): Promise<SucessCallBack> {
-    console.log(options);
-    return {msg: "成功"}
+  async call(options: CallOptions): Promise<void> {
+    const { phone } = options;
+    window.open(`tel:${phone}`);
   }
 }

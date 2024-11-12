@@ -1,10 +1,7 @@
 export interface PhoneCallPlugin {
-  start(options: PhoneCallOptions): Promise<SucessCallBack>;
+  call(options: CallOptions): Promise<void>;
 }
 
-export interface PhoneCallOptions {
+export interface CallOptions {
   phone: string;
-}
-export interface SucessCallBack {
-  msg: string;
 }
