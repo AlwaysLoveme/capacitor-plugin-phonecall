@@ -1,5 +1,5 @@
 {
-  "name": "capacitor-plugin-phonecall",
+  "name": "capacitor-plugin-phone-call",
   "version": "2.0.0",
   "description": "a native phone call plugin for Capacitor",
   "main": "dist/plugin.cjs.js",
